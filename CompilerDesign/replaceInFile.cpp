@@ -16,7 +16,7 @@ int main(){
     std::string newString;
     int substringCount = 0;
 
-    std::ifstream fin("new.txt");
+    std::ifstream fin("fileWhereTextIsReplaced.txt");
     while(getline(fin, originalString)) {
         for (int i = 0; i < originalString.length() ; i++) {
             if (originalString.substr(i, wantedString.length()) == wantedString){
